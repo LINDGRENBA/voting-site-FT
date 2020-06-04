@@ -4,8 +4,10 @@ $(document).ready(function() {
 
   if(userAgeInput >= 18) {
     $("#eighteen-up").show();
+    $("#under-eighteen").hide();
   } else {
-    $("#under-eighteen").show()
+    $("#under-eighteen").show();
+    $("#eighteen-up").hide();
   }
 
 });
